@@ -1,0 +1,677 @@
+/*Header*/
+body{
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    background: url('../img/header-bg.jpg') 48% 50%/cover;
+}
+nav{
+    padding:1em 2em 1em 2em;
+    background-color: rgba(0, 0, 0, 0.396);
+    border-radius: 5px 0;
+}
+nav hr{
+    height: 2px;   
+    background-color: #ffffff;
+    border: none; 
+}
+#menu{
+    display: flex; 
+    gap:0.5em;
+    flex-direction: column;
+}
+#menu li a{
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: normal;
+    font-family: "Proxima Nova";
+}
+#title h2{
+    color: #ffffff;
+    font-weight: 700;
+    border:1px solid #000000;
+    background-color: #0000006f;
+    font-family: "Montserrat";
+    padding: 0.5em;
+    border-radius: 0.1em;
+}
+#title button{
+    color: #fff;
+    background-color:#3ac1288b;
+    border-radius: 15px;
+    border-color: #0000008b;
+    font-size: 25px;
+    font-family: "Proxima Nova";
+    margin-top: 1em;
+}
+#search{display: none;}
+#scroll{
+    background-color: #ffffffa7;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+/*What we do*/
+#what-we-do{
+    padding:3em 0 5em 0 ;
+}
+#what-we-do h1{
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #828181;
+    font-weight: 300;
+    font-family: "Montserrat";
+    text-align: center;
+}
+#what-we-do h6{
+    font-size: 12px;
+    color: #b7b3b3;
+    font-family: "Myriad Pro";
+    text-align: center;
+}
+#what-we-do-explanation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.block-type-1{
+    text-align: center;
+    margin-top: 4em;
+}
+.block-type-1 h2{
+    font-size: 15px;
+    color: #828181;
+    font-weight: bold;
+    font-family: "Proxima Nova";
+}
+.block-type-1 p{
+    font-size: 10px;
+    color: #828181;
+    font-weight: 300;
+    font-family: "Montserrat";
+    text-align: center;
+}
+.block-type-1 a{
+    color: #fff;
+    background-color:#54d154;
+    padding: 0.2em 0.5em;
+    border-radius: 2em;
+}
+/*Our latest work*/
+#our-latest-work{
+    text-align: center;
+    background-color: #54d154;
+    padding: 2em 0 5em 0;
+}
+#our-latest-work h1{
+    font-size: 18px;
+    color: #081508af;
+    font-weight: bold;
+    font-family: "Proxima Nova";
+}
+#our-latest-work h6{
+    font-size: 13px;
+    color: #276e27;
+    font-family: "Myriad Pro";
+    text-align: center;
+    margin-bottom: 1em;
+}
+#our-latest-work hr{
+    border-bottom: 2px solid #081508;
+}
+.photos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.5em;
+    justify-content: center;
+}
+.photos img{
+    margin: 0.5em;
+    border-radius: 0.5em;
+}
+.col1,.col2{
+    display: flex;
+    flex-direction: column;
+}
+/*Testimonial*/
+#Testimonial{
+    text-align: center;
+    padding: 2em 0 2em 0;
+}
+#Testimonial h1{
+    font-size: 18px;
+    color: #5c5c5ce1;
+    font-weight: bold;
+    font-family: "Proxima Nova";
+}
+#Testimonial h6{
+    font-size: 12px;
+    color: #898989;
+    font-family: "Myriad Pro";
+    text-align: center;
+    margin-bottom: 1em;
+}
+#Testimonial hr{
+    border-bottom: 2px solid #081508;
+}
+#review-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#review-person{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Our happy client*/
+#our-happy-client{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f1f1;
+    text-align: center;
+    padding: 2em 0 1em 0;
+    justify-content: center;
+    align-items: center;
+}
+#our-happy-client h1{
+    font-size: 18px;
+    color: #5c5c5ce1;
+    font-weight: bold;
+    font-family: "Proxima Nova";
+}
+#our-happy-client h6{
+    font-size: 12px;
+    color: #898989;
+    font-family: "Myriad Pro";
+    text-align: center;
+    margin-bottom: 1em;
+}
+#our-happy-client hr{
+    border-bottom: 2px solid #081508;
+}
+#our-happy-client a{
+    margin-top:3em;
+}
+#clients{
+    display: flex;
+    flex-direction:row;
+}
+.clients-row1{
+    display: flex;
+    flex-direction: column;
+}
+.clients-row2{
+    display: flex;
+    flex-direction: column;
+}
+/*Team*/
+#first-team{
+    background-color: #54d154;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    padding: 2em 0 1em 0;
+}
+#first-team h1{
+    font-size: 18px;
+    color: #081508af;
+    font-weight: bold;
+    font-family: "Proxima Nova";
+}
+#first-team h6{
+    font-size: 13px;
+    color: #276e27;
+    font-family: "Myriad Pro";
+    text-align: center;
+    margin-bottom: 1em;
+}
+#first-team hr{
+    border-bottom: 2px solid #081508;
+}
+#second-team{
+    padding: 1em;
+    background-color:#236723;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#second-team a{
+    color: #fff;
+    background-color: #54d15490;
+    border-radius: 1em;
+    padding: 0.2em 1em;
+}
+.SC{
+    background-color: #fff;
+    border-radius: 1em;
+    width: 55%;
+    margin: auto;
+    margin-top: 0.2em;
+    margin-bottom: 2em;
+}
+.person{margin: 1em;}
+/*LAST PART*/
+#last-part{
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0;
+}
+#about-us{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    margin-bottom: 4em;
+    align-items: center;
+    justify-content: center;
+}
+#about-us h1{
+    text-align: center;
+    font-size:18px;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#about-us p{
+    font-size: 16px;
+    color: #cccccc;
+    text-align: center;
+    min-width:300px;
+}
+.SN{
+    background-color: #fff;
+    border-radius: 1em;
+    max-width: 80px;
+    margin: auto;
+    min-width:78px;
+}
+#recent-posts{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    margin-bottom: 4em;
+    justify-content: center;
+    align-items: center;
+}
+#recent-posts h1{
+    text-align: center;
+    font-size:18px;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#recent-posts p{
+    font-size: 16px;
+    color: #cccccc;
+    text-align: center;
+    min-width:200px;
+}
+.recent-post{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5em;
+}
+.recent-post img{
+    height: 3em;
+    margin-right: 0.5em;
+}
+.post-text{
+    margin: auto;
+}
+#contact-us{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    justify-content: center;
+    align-items: center;
+}
+#contact-us h1{
+    text-align: center;
+    font-size:18px;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+#contact-us p{
+    font-size: 14px;
+    color: #cccccc;
+    font-weight: 300;
+    text-align: center;
+    min-width: 300px;
+}
+#contact-us textarea{
+    height: 8em;
+    width: 20em;
+}
+#contact-us input{
+    width: 20em;
+}
+/*Footer*/
+#first-footer-part{
+    background-color:#222;
+    height: 55vh;
+    text-align: center;
+    color: #c8c8c8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top:1.5em;
+}
+#companies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3em;
+    margin-top:3em;
+}
+#second-footer-part{
+    display: flex;
+    background-color: #111;
+    height: 3.5vh;
+    color: #c8c8c8;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+    /*Header*/
+    header{
+        background: url('../img/header-bg.jpg') 42% 50%/cover;
+    }
+    nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    #logo{
+        padding:0  0.3em;
+        border-left: 2px solid rgb(255, 255, 255);
+        border-right: 2px solid rgb(255, 255, 255); 
+    }
+    #menu { 
+        display: flex;
+        order: -1;
+        flex-direction: row;
+        gap: 2em;
+    }
+    #search {  display: flex; }
+    #search input, #search button {
+        height: 27px;
+        background: #ffffff80;
+        border-radius: 1em 0 0 1em; 
+        font: 1em 'Myriad Pro';
+        color: #111;    
+        border: none;
+        outline: none;
+        padding: 5px 15px;
+    }
+    #search button { border-radius: 0 1em 1em 0; }
+    #search button img { height: 1em; }
+    /*What we do*/
+    #what-we-do-explanation{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: 100%;
+        justify-content: center;
+        gap: 5em;
+    }
+    /*Our latest work*/
+    .col1,.col2{
+        flex-direction: column;
+    }
+    .photos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .photos img{
+        margin: 1em;
+    }
+    /*Testimonial*/
+    /*Our happy client*/
+    #clients{
+        display: flex;
+        flex-direction:column;
+    }
+    .clients-row1{
+        display: flex;
+        flex-direction: row;
+    }
+    .clients-row2{
+        display: flex;
+        flex-direction: row;
+    }
+    /*Team*/
+    #persons{display: flex; flex-direction: column;}
+    #first-persons{display: flex;flex-direction: row;}
+    #second-persons{display: flex;flex-direction: row; margin: auto;}
+    /*LAST PART*/
+    #last-part{
+        display: flex;
+        flex-direction: column;
+        background-color: #333333;
+        align-items: center;
+        justify-content: center;
+        padding: 3em;
+    }
+    #about-us{
+        display: flex;
+        flex-direction: column;
+        width:50%;
+        margin-bottom: 4em;
+        align-items: center;
+        justify-content: center;
+    }
+    #about-us h1{
+        text-align: center;
+        font-size:18px;
+        color: #fff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #about-us p{
+        font-size: 16px;
+        color: #cccccc;
+        text-align: center;
+    }
+    .SN{
+        background-color: #fff;
+        border-radius: 1em;
+        max-width: 80px;
+        margin: auto;
+    }
+    #recent-posts{
+        display: flex;
+        flex-direction: column;
+        width:50%;
+        margin-bottom: 4em;
+        justify-content: center;
+        align-items: center;
+    }
+    #recent-posts h1{
+        text-align: center;
+        font-size:18px;
+        color: #fff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #recent-posts p{
+        font-size: 16px;
+        color: #cccccc;
+        text-align: center;
+    }
+    .recent-post{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0.5em;
+    }
+    .recent-post img{
+        height: 3em;
+        margin-right: 0.5em;
+    }
+    .post-text{
+        margin: auto;
+    }
+    #contact-us{
+        display: flex;
+        flex-direction: column;
+        width:50%;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact-us h1{
+        text-align: center;
+        font-size:18px;
+        color: #fff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+    #contact-us p{
+        font-size: 14px;
+        color: #cccccc;
+        font-weight: 300;
+        text-align: center;
+    }
+    #contact-us textarea{
+        height: 10em;
+        width: 30em;
+    }
+    #contact-us input{
+        width: 30em;
+    }
+    /*Footer*/
+    #first-footer-part{
+        height: 25vh;
+        align-items: center;
+    }
+    #companies{
+        flex-direction: row;
+        flex-wrap: wrap; 
+    }
+}
+@media only screen and (min-width:1150px){
+    /*Header*/
+    #search{display: flex;}
+    nav{
+        position: relative;
+    }
+    #logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    /*What we do*/
+    #what-we-do-explanation{
+        width: 60%;
+        min-width: 1000px;
+    }
+    /*Our latest work*/
+    .col1,.col2{
+        flex-direction: row;
+    }
+    .photos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .photos img{
+        margin: 1em;
+    }
+    /*Testimonial*/
+    /*Our happy client*/
+    /*Team*/
+    #persons{display: flex; flex-direction: row;}
+    #first-persons{display: flex;flex-direction: row;}
+    #second-persons{display: flex;flex-direction: row; margin: auto;}
+    /*LAST PART*/
+    #last-part{
+        display: flex;
+        flex-direction: row;
+        background-color: #333333;
+        align-items: center;
+        justify-content: center;
+        padding: 3em;
+    }
+    #about-us{
+        display: flex;
+        flex-direction: column;
+        width:33.33%;
+        margin-bottom: 4em;
+    }
+    #about-us h1{
+        text-align: center;
+        font-size:18px;
+        color: #fff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #about-us p{
+        font-size: 16px;
+        color: #cccccc;
+        text-align: center;
+    }
+    #recent-posts{
+        display: flex;
+        flex-direction: column;
+        width:33.33%;
+        margin-bottom: 4em;
+        justify-content: center;
+        align-items: center;
+    }
+    #recent-posts h1{
+        text-align: center;
+        font-size:18px;
+        color: #fff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #recent-posts p{
+        font-size: 16px;
+        color: #cccccc;
+        text-align: center;
+    }
+    .recent-post{
+        display: flex;
+        flex-direction: row;
+    }
+    .recent-post img{
+        height: 3em;
+    }
+    #contact-us{
+        display: flex;
+        flex-direction: column;
+        width:33.33%;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact-us h1{
+        text-align: center;
+        font-size:18px;
+        color: #fff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+    #contact-us p{
+        font-size: 14px;
+        color: #cccccc;
+        font-weight: 300;
+        text-align: center;
+    }
+    #contact-us textarea{
+        height: 10em;
+        width: 30em;
+    }
+    #contact-us input{
+        width: 30em;
+    }
+    /*Footer*/
+    #first-footer-part{
+        height: 20vh;
+    }
+}
